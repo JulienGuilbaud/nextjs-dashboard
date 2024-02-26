@@ -1,15 +1,14 @@
-'use client';// directive react
- 
+'use client'; // directive react
+
 import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';// hook permet d'obtenir l'url
+import { usePathname } from 'next/navigation'; // hook permet d'obtenir l'url
 
 import clsx from 'clsx';
-
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
@@ -24,8 +23,7 @@ const links = [
 ];
 
 export default function NavLinks() {
-
-  const pathname = usePathname();//attribution a une variable
+  const pathname = usePathname(); //attribution a une variable
 
   return (
     <>
